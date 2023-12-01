@@ -27,8 +27,6 @@
   text-decoration: none;
 }
 
-#container {}
-
 /* Header */
 
 header {
@@ -38,16 +36,18 @@ header {
 
 nav {
 
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
+  height: 13vh;
   padding: 40px;
 }
 
 .logo {
-  width: 15%;
+  height: 50px;
 }
+
 
 nav ul {
 
@@ -57,6 +57,11 @@ nav ul {
   gap: 2.5rem;
   font-family: fuente;
   font-weight: lighter;
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #444;
+  text-transform: uppercase;
+  padding: 1em;
 }
 
 ul li a {
@@ -75,7 +80,6 @@ ul li a {
 
 /* Main */
 
-main {}
 
 .midle-text {
 
@@ -88,6 +92,7 @@ main {}
   letter-spacing: 5px;
   height: 350px;
   gap: 30px;
+  margin-top: 120px;
 }
 
 .texto-p {
@@ -106,5 +111,132 @@ main {}
 
   border: .6px solid black;
   height: 100px;
+
+}
+
+/* Galeria imagenes */
+
+
+.galeria {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.galeria-images {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 11px;
+  grid-row-gap: 11px;
+  grid-template-areas:
+    "one one two"
+    "one one four"
+    "three five four"
+    "three six six"
+    "seven six six";
+}
+
+.ramo-flores {
+
+  grid-area: one;
+
+}
+
+.jarron-flores {
+  grid-area: two;
+}
+
+.gif {
+
+  grid-area: five;
+}
+
+.tienda {
+
+  grid-area: four;
+}
+
+.cartel-emy {
+
+  grid-area: three;
+}
+
+.pared-escalera {
+  grid-area: seven;
+}
+
+.coffi-lab {
+
+  grid-area: six;
+
+}
+
+.final-text {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: fuente;
+  height: 350px;
+  gap: 30px;
+}
+
+.lets {
+
+  padding: 10px 30px;
+  color: #757575;
+  border: 1px solid;
+  border-color: #606060;
+  letter-spacing: 3px;
+  font-size: 12px;
+
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f5f0;
+}
+
+.caja-footer {
+
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  width: 1000px;
+  padding: 40px;
+}
+
+.caja-footer img {
+
+  width: 100px;
+}
+
+.caja-footer p {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300;
+}
+
+.copy {
+
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  width: 1000px;
+  padding: 40px;
+  text-align: center;
+}
+
+.texto-copy {
+
+  text-align: center;
 
 }
